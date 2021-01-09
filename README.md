@@ -11,6 +11,9 @@
 npm install @jswork/wsui-appify
 ```
 
+## resources
+- https://github.com/connors/photon
+
 ## license
 Code released under [the MIT license](https://github.com/afeiship/wsui-appify/blob/master/LICENSE.txt).
 

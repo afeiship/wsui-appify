@@ -9,11 +9,19 @@
   },
   "scripts": {
     "build": "gulp",
-    "release": "release-it"
+    "release": "release-it",
+    "storybook:start": "start-storybook -p 6006",
+    "storybook:build": "build-storybook -o docs"
   },
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/html": "^6.1.11",
+    "babel-loader": "^8.2.2",
     "@jswork/gulp-pkg-header": "^1.0.3",
     "@jswork/next": "^1.0.4",
     "@jswork/next-global": "^1.0.0",
