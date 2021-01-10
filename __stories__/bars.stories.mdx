@@ -6,16 +6,4 @@ import { Meta } from '@storybook/addon-docs/blocks';
 > bars component.
 
 ## showtime
-<div className="window">
-  <header className="toolbar toolbar-header">
-    <span className="title">Header</span>
-  </header>
-
-  <div className="window-content">
-    Content.
-  </div>
-
-  <footer className="toolbar toolbar-footer">
-    <span className="title">Footer</span>
-  </footer>
-</div>
+<div className="html-loader" dangerouslySetInnerHTML={{ __html: require('./components/bars.html') }} />

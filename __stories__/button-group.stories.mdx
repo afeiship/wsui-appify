@@ -6,20 +6,4 @@ import { Meta } from '@storybook/addon-docs/blocks';
 > button-group component.
 
 ## showtime
-<div className="btn-group">
-  <button className="btn btn-default">
-    home
-  </button>
-  <button className="btn btn-default">
-    folder
-  </button>
-  <button className="btn btn-default active">
-    cloud
-  </button>
-  <button className="btn btn-default">
-    popup
-  </button>
-  <button className="btn btn-default">
-    shuffle
-  </button>
-</div>
+<div className="html-loader" dangerouslySetInnerHTML={{ __html: require('./components/button-group.html') }} />
