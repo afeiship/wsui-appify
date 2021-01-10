@@ -2,7 +2,7 @@
 @import "../node_modules/@jswork/wsui-generators/dist/index.scss";
 
 $box-list: range(4, 20, 2);
-@debug $box-list;
+$font-list: range(10, 20, 2);
 
 //Generate margin:
 @include generator-box($box-list, "m");
@@ -22,16 +22,21 @@ $box-list: range(4, 20, 2);
 @include generator-box($box-list, "px");
 @include generator-box($box-list, "py");
 
+// font-list
+@include generator-font-size($font-list);
+
 .html-loader {
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
-  .icon {
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 24px;
-    color: #666;
-    display: inline-block;
-    width: 25px;
+  .is-icon-list {
+    .icon {
+      margin-right: 5px;
+      margin-left: 5px;
+      font-size: 24px;
+      color: #666;
+      display: inline-block;
+      width: 25px;
+    }
   }
 }

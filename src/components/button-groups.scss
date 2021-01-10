@@ -4,19 +4,19 @@
 // --------------------------------------------------
 
 // Button groups
-.btn-group {
+.#{$prefix}btn-group {
   position: relative;
   display: inline-block;
-  vertical-align: middle; // match .btn alignment given font-size hack above
+  vertical-align: middle; // match .#{$prefix}btn alignment given font-size hack above
   -webkit-app-region: no-drag;
 
-  .btn {
+  .#{$prefix}btn {
     position: relative;
     float: left;
 
     // Bring the "active" button to the front
     &:focus,
-    &:active{
+    &:active {
       z-index: 2;
     }
 
@@ -27,46 +27,47 @@
 }
 
 // Prevent double borders when buttons are next to each other
-.btn-group {
-  .btn + .btn,
-  .btn + .btn-group,
-  .btn-group + .btn,
-  .btn-group + .btn-group {
+.#{$prefix}btn-group {
+  .#{$prefix}btn + .#{$prefix}btn,
+  .#{$prefix}btn + .#{$prefix}btn-group,
+  .#{$prefix}btn-group + .#{$prefix}btn,
+  .#{$prefix}btn-group + .#{$prefix}btn-group {
     margin-left: -1px;
   }
 
-  > .btn:first-child {
+  > .#{$prefix}btn:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  > .btn:last-child {
+  > .#{$prefix}btn:last-child {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-  > .btn:not(:first-child):not(:last-child) {
+  > .#{$prefix}btn:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
 
-  .btn + .btn {
+  .#{$prefix}btn + .#{$prefix}btn {
     border-left: 1px solid #c2c0c2;
   }
 
-  .btn + .btn.is-active {
+  .#{$prefix}btn + .#{$prefix}btn.is-active {
     border-left: 0;
   }
 
   // Selected state
-  .is-active {
+  .#{$prefix}btn.is-active {
     color: #fff;
     border: 1px solid transparent;
-    background-color: #6d6c6d;
-    background-image: none;
-  }
+    background: #6d6c6d;
+    &:active {
+      background: darken(#6d6c6d, 5%);
+    }
 
-  // Invert the icon in the active button
-  .is-active .icon {
-    color: #fff;
+    .icon {
+      color: #fff;
+    }
   }
 }
