@@ -46,6 +46,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@jswork/noop": "^1.0.0"
+    "@jswork/noop": "^1.0.0",
+    "@jswork/wsui-reset": "^1.0.2"
   }
 }
