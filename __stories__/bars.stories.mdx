@@ -1,4 +1,5 @@
-import { Meta } from '@storybook/addon-docs/blocks';
+import { Meta,Preview } from '@storybook/addon-docs/blocks';
+import Html from './components/bars.html';
 
 <Meta title="Components/bars" />
 
@@ -6,4 +7,11 @@ import { Meta } from '@storybook/addon-docs/blocks';
 > bars component.
 
 ## showtime
-<div className="html-loader" dangerouslySetInnerHTML={{ __html: require('./components/bars.html') }} />
+<div className="html-loader" dangerouslySetInnerHTML={{ __html: Html }} />
+
+## usage
+<Preview mdxSource={Html}>
+  <Story id="bars">
+    Show Code
+  </Story>
+</Preview>

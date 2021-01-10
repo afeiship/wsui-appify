@@ -13,7 +13,6 @@ $box-list: range(4, 20, 2);
 @include generator-box($box-list, "mx");
 @include generator-box($box-list, "my");
 
-
 // OR you want Generate `rem` value
 @include generator-box($box-list, "p");
 @include generator-box($box-list, "pt");
@@ -23,9 +22,16 @@ $box-list: range(4, 20, 2);
 @include generator-box($box-list, "px");
 @include generator-box($box-list, "py");
 
-
 .html-loader {
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
+  .icon {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 24px;
+    color: #666;
+    display: inline-block;
+    width: 25px;
+  }
 }
