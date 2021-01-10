@@ -1,4 +1,4 @@
-import { Meta,Preview } from '@storybook/addon-docs/blocks';
+import { Meta,Preview,Source } from '@storybook/addon-docs/blocks';
 import Html from './components/bars.html';
 
 <Meta title="Components/bars" />
@@ -10,8 +10,4 @@ import Html from './components/bars.html';
 <div className="html-loader" dangerouslySetInnerHTML={{ __html: Html }} />
 
 ## usage
-<Preview mdxSource={Html}>
-  <Story id="bars">
-    Show Code
-  </Story>
-</Preview>
+<Source language='html' code={Html} />

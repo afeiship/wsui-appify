@@ -1,4 +1,5 @@
-import { Meta } from '@storybook/addon-docs/blocks';
+import { Meta,Preview,Source } from '@storybook/addon-docs/blocks';
+import Html from './components/navs.html';
 
 <Meta title="Components/navs" />
 
@@ -6,4 +7,7 @@ import { Meta } from '@storybook/addon-docs/blocks';
 > button component.
 
 ## showtime
-<div className="html-loader" dangerouslySetInnerHTML={{ __html: require('./components/navs.html') }} />
+<div className="html-loader" dangerouslySetInnerHTML={{ __html: Html}} />
+
+## usage
+<Source language='html' code={Html} />
