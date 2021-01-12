@@ -7,44 +7,42 @@
   box-shadow: inset 0 1px 0 #f5f4f5;
   @include linear-gradient(#e8e6e8, #d1cfd1);
   @include clearfix;
-}
-
-.#{$prefix}toolbar-header {
-  border-bottom: 1px solid #c2c0c2;
 
   .is-title {
-    margin-top: 1px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #555;
+    cursor: default;
   }
-}
 
-.#{$prefix}toolbar-footer {
-  border-top: 1px solid #c2c0c2;
-  -webkit-app-region: drag;
-}
+  &-header {
+    border-bottom: 1px solid #c2c0c2;
 
-// Simple centered title to go in the toolbar
-.is-title {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 400;
-  text-align: center;
-  color: #555;
-  cursor: default;
-}
+    .is-title {
+      margin-top: 1px;
+    }
+  }
 
-// Buttons in toolbars
-.#{$prefix}toolbar-actions {
-  margin-top: 4px;
-  margin-bottom: 3px;
-  padding-right: 3px;
-  padding-left: 3px;
-  padding-bottom: 3px;
-  -webkit-app-region: drag;
-  @include clearfix;
+  &-footer {
+    border-top: 1px solid #c2c0c2;
+    -webkit-app-region: drag;
+  }
 
-  > .#{$prefix}btn,
-  > .#{$prefix}btn-group {
-    margin-left: 4px;
-    margin-right: 4px;
+  &-actions {
+    margin-top: 4px;
+    margin-bottom: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    -webkit-app-region: drag;
+    @include clearfix;
+
+    > .#{$prefix}btn,
+    > .#{$prefix}btn-group {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
   }
 }
