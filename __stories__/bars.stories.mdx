@@ -1,4 +1,5 @@
 import { Meta,Preview,Source } from '@storybook/addon-docs/blocks';
+import dedent from 'ts-dedent';
 import Html from './components/bars.html';
 
 <Meta title="Components/bars" />
@@ -10,4 +11,4 @@ import Html from './components/bars.html';
 <div className="html-loader" dangerouslySetInnerHTML={{ __html: Html }} />
 
 ## usage
-<Source language='html' dark code={Html} />
+<Source language='html' dark code={dedent(Html)} />
