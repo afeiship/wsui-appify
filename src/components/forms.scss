@@ -33,6 +33,7 @@ input[type="checkbox"] {
   border: 1px solid $border-color;
   border-radius: $default-border-radius;
   outline: none;
+  transition: all 0.3s;
 
   &:focus {
     border-color: $focus-input-color;
@@ -40,19 +41,10 @@ input[type="checkbox"] {
   }
 }
 
-// Reset height for `textarea`s
-textarea {
-  height: auto;
-}
-
 // Form groups
 //
 // Designed to help with the organization and spacing of vertical forms. For
 // horizontal forms, use the predefined grid classes.
-
-.form-group {
-  margin-bottom: 10px;
-}
 
 // Checkboxes and radios
 //
@@ -62,12 +54,9 @@ textarea {
 .checkbox {
   position: relative;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
 
   label {
     padding-left: 20px;
-    margin-bottom: 0;
     font-weight: normal;
   }
 }
@@ -78,11 +67,11 @@ textarea {
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
   margin-left: -20px;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 // Form actions
-.form-actions .btn {
+.form-actions .#{$prefix}btn {
   margin-right: 10px;
 
   &:last-child {
