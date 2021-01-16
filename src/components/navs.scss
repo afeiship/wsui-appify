@@ -2,40 +2,38 @@
 // Navs.scss
 // --------------------------------------------------
 
-.nav-group {
+.#{$prefix}nav-group {
   font-size: 14px;
-}
+  > .is-item {
+    padding: 4px 10px;
+    display: block;
+    color: $gray-color;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
-.nav-group-item {
-  padding: 4px 10px;
-  display: block;
-  color: $gray-color;
-  text-decoration: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    &:active,
+    &.is-active {
+      background-color: #dcdfe1;
+    }
 
-  &:active,
-  &.is-active {
-    background-color: #dcdfe1;
+    [class^="#{$prefix}icon"] {
+      width: 19px; // Prevents a one pixel cutoff
+      height: 18px;
+      float: left;
+      color: #737475;
+      margin-top: -3px;
+      margin-right: 7px;
+      font-size: 18px;
+      text-align: center;
+    }
   }
-
-  .icon {
-    width: 19px; // Prevents a one pixel cutoff
-    height: 18px;
-    float: left;
-    color: #737475;
-    margin-top: -3px;
-    margin-right: 7px;
-    font-size: 18px;
-    text-align: center;
+  > .is-title {
+    margin: 0;
+    padding: 10px 10px 2px;
+    font-size: 12px;
+    font-weight: 500;
+    color: lighten($gray-color, 20%);
   }
-}
-
-.nav-group-title {
-  margin: 0;
-  padding: 10px 10px 2px;
-  font-size: 12px;
-  font-weight: 500;
-  color: lighten($gray-color, 20%);
 }

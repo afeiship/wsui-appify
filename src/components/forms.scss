@@ -3,7 +3,24 @@
 // Adapted from Bootstrap's forms.less (https://github.com/twbs/bootstrap/blob/master/less/forms.less)
 // --------------------------------------------------
 
-label {
+.#{prefix}-form {
+  // Forms
+  input,
+  textarea {
+    -webkit-user-select: text;
+  }
+
+  form,
+  input,
+  optgroup,
+  select,
+  textarea {
+    -webkit-user-select: text;
+    -webkit-app-region: no-drag;
+  }
+}
+
+.is-label {
   display: inline-block;
   font-size: $font-size-default;
   margin-bottom: 5px;

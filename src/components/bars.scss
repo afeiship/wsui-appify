@@ -38,11 +38,5 @@
     padding-bottom: 3px;
     -webkit-app-region: drag;
     @include clearfix;
-
-    > .#{$prefix}btn,
-    > .#{$prefix}btn-group {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
   }
 }

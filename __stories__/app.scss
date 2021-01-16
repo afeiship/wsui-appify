@@ -29,8 +29,8 @@ $font-list: range(10, 20, 2);
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
-  .is-icon-list {
-    .icon {
+  .page-icon {
+    [class^="wsui-icon"] {
       margin-right: 5px;
       margin-left: 5px;
       font-size: 24px;
