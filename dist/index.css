@@ -4,7 +4,7 @@
  * description: Apple ui tookit for wsui.
  * homepage: https://github.com/afeiship/wsui-appify
  * version: 1.0.0
- * date: 2021-01-16 17:58:07
+ * date: 2021-01-16 23:52:02
  * license: MIT
  */
 /*wsui-appify Start*/
@@ -87,8 +87,6 @@
   background: #6d6c6d; }
   .wsui-btn-group .wsui-btn.is-active:active {
     background: #605f60; }
-  .wsui-btn-group .wsui-btn.is-active .wsui-icon {
-    color: #fff; }
 
 .wsui-btn {
   display: inline-block;

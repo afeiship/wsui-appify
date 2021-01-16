@@ -65,9 +65,5 @@
     &:active {
       background: darken(#6d6c6d, 5%);
     }
-
-    .#{$prefix}icon {
-      color: #fff;
-    }
   }
 }
