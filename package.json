@@ -51,5 +51,11 @@
     "@jswork/noop": "^1.0.0",
     "@jswork/wsui-reset": "^1.0.2",
     "@jswork/wsui-shorty": "^1.0.3"
-  }
+  },
+  "keywords": [
+    "wsui",
+    "appify",
+    "css",
+    "style"
+  ]
 }
