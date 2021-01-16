@@ -41,7 +41,17 @@ $font-list: range(10, 20, 2);
   }
 
   .page-form {
-    .is-group {
+  }
+
+  .page-navs {
+    display: flex;
+    > .is-sidebar {
+      width: 200px;
+    }
+
+    > .is-body {
+      background: #dcdfe1;
+      flex: 1;
     }
   }
 }
