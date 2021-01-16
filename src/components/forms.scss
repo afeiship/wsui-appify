@@ -3,7 +3,7 @@
 // Adapted from Bootstrap's forms.less (https://github.com/twbs/bootstrap/blob/master/less/forms.less)
 // --------------------------------------------------
 
-.#{prefix}-form {
+.#{$prefix}form {
   // Forms
   input,
   textarea {
@@ -18,80 +18,72 @@
     -webkit-user-select: text;
     -webkit-app-region: no-drag;
   }
-}
 
-.is-label {
-  display: inline-block;
-  font-size: $font-size-default;
-  margin-bottom: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-input[type="search"] {
-  box-sizing: border-box;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 4px 0 0;
-  line-height: normal;
-}
-
-.form-control {
-  display: inline-block;
-  width: 100%;
-  min-height: 25px;
-  padding: $padding-less $padding;
-  font-size: $font-size-default;
-  line-height: $line-height-default;
-  background-color: #fff;
-  border: 1px solid $border-color;
-  border-radius: $default-border-radius;
-  outline: none;
-  transition: all 0.3s;
-
-  &:focus {
-    border-color: $focus-input-color;
-    box-shadow: 0 0 0 3px $focus-input-color;
+  input[type="search"] {
+    box-sizing: border-box;
   }
-}
 
-// Form groups
-//
-// Designed to help with the organization and spacing of vertical forms. For
-// horizontal forms, use the predefined grid classes.
-
-// Checkboxes and radios
-//
-// Indent the labels to position radios/checkboxes as hanging controls.
-
-.radio,
-.checkbox {
-  position: relative;
-  display: block;
-
-  label {
-    padding-left: 20px;
-    font-weight: normal;
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 4px 0 0;
+    line-height: normal;
   }
-}
 
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 2px;
-}
+  .is-actions {
+    .#{$prefix}btn {
+      margin-right: 10px;
 
-// Form actions
-.form-actions .#{$prefix}btn {
-  margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 
-  &:last-child {
-    margin-right: 0;
+  .is-label {
+    display: inline-block;
+    font-size: $font-size-default;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .is-form-control {
+    display: inline-block;
+    width: 100%;
+    min-height: 25px;
+    padding: $padding-less $padding;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
+    background-color: #fff;
+    border: 1px solid $border-color;
+    border-radius: $default-border-radius;
+    outline: none;
+    transition: all 0.3s;
+
+    &:focus {
+      border-color: $focus-input-color;
+      box-shadow: 0 0 0 3px $focus-input-color;
+    }
+  }
+
+  .is-radio,
+  .is-checkbox {
+    position: relative;
+    display: block;
+
+    label {
+      padding-left: 20px;
+      font-weight: normal;
+    }
+  }
+
+  .is-radio input[type="radio"],
+  .is-radio-inline input[type="radio"],
+  .is-checkbox input[type="checkbox"],
+  .is-checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 2px;
   }
 }
