@@ -8,10 +8,10 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
+    "dev": "start-storybook -p 6006",
     "build": "gulp",
     "release": "release-it",
-    "storybook:start": "start-storybook -p 6006",
-    "storybook:build": "build-storybook -o docs"
+    "docs:build": "build-storybook -o docs"
   },
   "main": "dist/index.js",
   "license": "MIT",
